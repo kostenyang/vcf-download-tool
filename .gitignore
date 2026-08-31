@@ -1,0 +1,7 @@
+*.log
+*.tmp
+token.txt
+actcode.txt
+*code*.txt
+depot/
+.DS_Store
