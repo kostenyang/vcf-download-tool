@@ -109,7 +109,8 @@ VCF Operations UI 的 **Connected** 模式。細節見
 | 訊息 / 現象 | 原因 | 解法 |
 |---|---|---|
 | `Missing required argument: --depot-download-activation-code-file` | **每個** list/download 動作都要帶認證檔 | 補上 |
-| `Can't access Broadcom depot with provided activation code` | code **過期** | 用**同一顆 ID** 到 portal 重產 |
+| `Can't access Broadcom depot with provided Customer activation code` | 🔴 **最常見：code 綁的 ID 不是本機**（拿別台產的 code 來用） | 解開 code 的 base64 比對 `asset_id` 是否等於 `configuration get --software-depot-id`；不符就用本機 ID 重新註冊 |
+| 同上，但 ID 確認相符 | code **過期** | 用**同一顆 ID** 到 portal 重產 |
 | 產完 ID 後 code 突然失效 | 用了 `generate --force`，ID 換了 | 拿新 ID 重產 code |
 | list / metadata 正常，但 binary **HTTP 403** | 該帳號**沒有 binary 下載 entitlement**（site/tenant 權限不同） | 換一顆有下載權限的 code。**與指令、proxy 都無關** |
 | Installer sync 卡 `Vmware compatibility data download failed` | 用 token 下的，缺 Compatibility | 改用 activation code，或另外補 metadata zip |

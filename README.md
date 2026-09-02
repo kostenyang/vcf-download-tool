@@ -13,6 +13,7 @@
 | [AUTH.md](AUTH.md) | **token vs activation code** —— 差在哪、怎麼選、Software depot ID 流程 |
 | [CLI-REFERENCE.md](CLI-REFERENCE.md) | 完整命令樹與旗標速查（實測全集） |
 | [WORKFLOWS.md](WORKFLOWS.md) | 常用配方：列版本、精準下載、整批下載、背景跑、進 depot |
+| [WINDOWS.md](WINDOWS.md) | **Windows 專章**：呼叫方式、憑證檔 BOM/CRLF、走 proxy、實測輸出 |
 | [PROXY.md](PROXY.md) | 走企業 proxy、如何驗證真的有走、官方限制 |
 | [CLEANUP.md](CLEANUP.md) | `binaries cleanup`、重新下載、整個重來（含備份警告） |
 | [GOTCHAS.md](GOTCHAS.md) | 踩雷合輯 —— **建議先看這份** |
